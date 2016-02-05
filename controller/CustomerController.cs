@@ -18,7 +18,6 @@ namespace Owin_Self_Host_Sample.controller
                 FirstName = "roshane",
                 LastName = "perera"
             };
-            Console.WriteLine($"return response {customer}");
             return customer;
         }
 
