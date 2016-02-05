@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 using Owin_Self_Host_Sample.model;
@@ -8,7 +7,7 @@ namespace Owin_Self_Host_Sample.controller
 {
     public class CustomerController : ApiController
     {
-        [HttpGet,ActionName("customer")]
+        [HttpGet, ActionName("customer")]
         public Customer GetCustomer()
         {
             var customer = new Customer()
@@ -21,7 +20,7 @@ namespace Owin_Self_Host_Sample.controller
             return customer;
         }
 
-        [HttpGet,ActionName("customers")]
+        [HttpGet, ActionName("customers")]
         public List<Customer> GetAllCustomers()
         {
             var customers = new List<Customer>();
